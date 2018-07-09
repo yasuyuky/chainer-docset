@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PYTHON=python3.6
-VERSION=$(grep chainer requirements.txt| cut -f 3 -d '=')
+VERSION=v$(grep chainer requirements.txt| cut -f 3 -d '=')
 
 git clone https://github.com/chainer/chainer
 cd chainer/docs
