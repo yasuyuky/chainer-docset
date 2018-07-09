@@ -1,0 +1,4 @@
+chainer==v4.2.0
+sphinx
+sphinx_rtd_theme
+doc2dash
