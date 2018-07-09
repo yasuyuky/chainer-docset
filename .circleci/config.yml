@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6-stretch
+    steps:
+      - checkout
+      - run: bash build.sh
+      - store_artifacts:
+          path: chainer/docs/Chainer.docset.zip
