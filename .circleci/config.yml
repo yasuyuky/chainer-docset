@@ -5,6 +5,6 @@ jobs:
       - image: circleci/python:3.6-stretch
     steps:
       - checkout
-      - run: bash build.sh
+      - run: make
       - store_artifacts:
-          path: chainer/docs/Chainer.docset.zip
+          path: Chainer.docset.zip
