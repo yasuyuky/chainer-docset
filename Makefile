@@ -31,7 +31,7 @@ Chainer.docset.zip: Chainer.docset
 
 .PHONY: clean release
 
-release: Chainer.docset.zip
+release:
 	source .venv/bin/activate && \
 	githubrelease release yasuyuky/chainer-docset create $(VERSION) --publish --name "$(VERSION)" Chainer.docset.zip
 
