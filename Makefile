@@ -29,7 +29,11 @@ Chainer.docset: chainer_icon_red.png chainer/docs/build/html
 Chainer.docset.zip: Chainer.docset
 	zip -9 -r Chainer.docset.zip Chainer.docset
 
-.PHONY: clean
+.PHONY: clean release
+
+release: Chainer.docset.zip
+	source .venv/bin/activate && \
+	githubrelease release yasuyuky/chainer-docset create $(VERSION) --publish --name "$(VERSION)" Chainer.docset.zip
 
 clean:
 	rm -rf chainer .venv chainer_icon_red.png Chainer.docset*
