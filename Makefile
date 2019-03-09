@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-PYTHON = python3.6
+PYTHON = python3.7
 VERSION = v$(shell grep chainer requirements.txt| cut -f 3 -d '=')
 REMOVE = .venv/lib/$(PYTHON)/site-packages
 
