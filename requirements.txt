@@ -1,4 +1,4 @@
-chainer==7.2.0
+chainer==7.4.0
 sphinx
 sphinx_rtd_theme
 doc2dash
